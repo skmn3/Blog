@@ -4,14 +4,14 @@ import { Board } from './board.model';
 
 @Controller('boards')
 export class BoardsController {
-    constructor(private boardsService: BoardsService) {}
+    constructor(private boardsService: BoardsService) { }
 
     @Get('/')
     getAllboard(): Board[] {
         return this.boardsService.getAllboards();
     }
 
-    @Post('/board')
+    @Post()
     createBoard(
         @Body('title') title: string,
         @Body('description') description: string
