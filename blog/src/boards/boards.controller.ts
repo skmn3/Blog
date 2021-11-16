@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { BoardsService } from './boards.service';
-import { Board } from './board.model';
+import Board from './board.model';
 
 @Controller('boards')
 export class BoardsController {
