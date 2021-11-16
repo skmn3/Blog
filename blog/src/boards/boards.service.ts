@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Board, BoardStatus } from './board.model';
+import Board, { BoardStatus } from './board.model';
 import { v4 as uuid } from 'uuid';
 @Injectable()
 export class BoardsService {
