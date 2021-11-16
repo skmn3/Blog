@@ -1,4 +1,4 @@
-export class Board {
+export default class Board {
     id: string;
     title: string;
     description: string;
@@ -8,5 +8,4 @@ export class Board {
 export enum BoardStatus {
     PUBLIC = 'PUBLIC',
     PRIVATE = 'PRIVATE'
-
 }
