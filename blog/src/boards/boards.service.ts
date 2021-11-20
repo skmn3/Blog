@@ -4,6 +4,9 @@ import { v4 as uuid } from 'uuid';
 import { CreateBoardDto } from '../boards/dto/create-board.dto';
 @Injectable()
 export class BoardsService {
+    getBoard(): Board {
+        throw new Error('Method not implemented.');
+    }
     private boards: Board[] = [];
     
     getAllboards(): Board[] {
@@ -21,5 +24,9 @@ export class BoardsService {
 
         this.boards.push(board);
         return board;
+    }
+
+    getBoardById(id: string): Board {
+        return this.boards.find((board) => board.id === id);
     }
 }
