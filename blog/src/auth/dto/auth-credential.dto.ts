@@ -13,10 +13,5 @@ export class AuthCredentialsDto {
         message: 'Only English letters and numbers, and @ and # are allowed for passwords.'
     })
     password: string;
-
-    @IsString()
-    @MinLength(10)
-    @MaxLength(36)
-    email: string;
 }
 
