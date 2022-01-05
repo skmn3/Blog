@@ -37,3 +37,8 @@ lerna-debug.log*
 # config
 config
 
+# dotenv
+.env
+.env.dev
+
+
