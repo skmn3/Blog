@@ -1,7 +1,7 @@
 import { Body, Controller, Post, UseGuards, ValidationPipe } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from '../services/user.service';
-import { AuthCredentialsDto } from '../utils/user-credential.dto';
+import { AuthCredentialsDto } from '../utils/dto/user-credential.dto';
 import { GetUser } from '../utils/get-user.decorator';
 import { User } from '../entities/user.entity';
 

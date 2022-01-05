@@ -18,7 +18,7 @@ import { User } from '../entities/user.entity';
 import { BoardStatus } from '../utils/board-status.enum';
 import { Board } from '../entities/board.entity';
 import { BoardsService } from '../services/boards.service';
-import { CreateBoardDto } from '../utils/create-board.dto';
+import { CreateBoardDto } from '../utils/dto/create-board.dto';
 import { BoardStatusValidationPipe } from '../utils/board-status-validation.pipe';
 
 @Controller('boards')

@@ -4,7 +4,7 @@ import { User } from '../entities/user.entity';
 import { BoardStatus } from '../utils/board-status.enum';
 import { Board } from '../entities/board.entity';
 import { BoardRepository } from '../repositories/board.repository';
-import { CreateBoardDto } from '../utils/create-board.dto';
+import { CreateBoardDto } from '../utils/dto/create-board.dto';
 
 @Injectable()
 export class BoardsService {
