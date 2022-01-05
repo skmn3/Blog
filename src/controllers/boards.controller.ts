@@ -18,8 +18,8 @@ import { User } from '../entities/user.entity';
 import { BoardStatus } from '../utils/board-status.enum';
 import { Board } from '../entities/board.entity';
 import { BoardsService } from '../services/boards.service';
-import { CreateBoardDto } from '../dto/create-board.dto';
-import { BoardStatusValidationPipe } from '../pipes/board-status-validation.pipe';
+import { CreateBoardDto } from '../utils/create-board.dto';
+import { BoardStatusValidationPipe } from '../utils/board-status-validation.pipe';
 
 @Controller('boards')
 @UseGuards(AuthGuard())

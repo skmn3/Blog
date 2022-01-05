@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BoardsModule } from '../modules/boards.module';
-import { typeORMConfig } from '../configs/typrorm.config';
+import { typeORMConfig } from '../utils/typrorm.config';
 import { AuthModule } from '../modules/user.module';
 
 @Module({
