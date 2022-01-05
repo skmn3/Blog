@@ -2,7 +2,7 @@ import { User } from '../entities/user.entity';
 import { EntityRepository, Repository } from 'typeorm';
 import { BoardStatus } from '../utils/board-status.enum';
 import { Board } from '../entities/board.entity';
-import { CreateBoardDto } from '../dto/create-board.dto';
+import { CreateBoardDto } from '../utils/dto/create-board.dto';
 
 @EntityRepository(Board)
 export class BoardRepository extends Repository<Board> {
