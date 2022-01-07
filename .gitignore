@@ -40,5 +40,3 @@ config
 # dotenv
 .env
 .env.dev
-
-
